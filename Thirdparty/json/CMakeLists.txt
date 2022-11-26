@@ -87,7 +87,7 @@ add_library(${PROJECT_NAME}::${NLOHMANN_JSON_TARGET_NAME} ALIAS ${NLOHMANN_JSON_
 if (${CMAKE_VERSION} VERSION_LESS "3.8.0")
     target_compile_features(${NLOHMANN_JSON_TARGET_NAME} INTERFACE cxx_range_for)
 else()
-    target_compile_features(${NLOHMANN_JSON_TARGET_NAME} INTERFACE cxx_std_11)
+    target_compile_features(${NLOHMANN_JSON_TARGET_NAME} INTERFACE cxx_std_17)
 endif()
 
 target_compile_definitions(
