@@ -8,6 +8,3 @@ cp src/Osmap.cpp "${FOLDER}/src/"
 
 cp osmap.pb.h "${FOLDER}/include/"
 cp include/Osmap.h "${FOLDER}/include/"
-
-cd "$FOLDER/build"
-make -j2
