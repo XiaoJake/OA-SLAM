@@ -28,9 +28,6 @@ set(JSON_BuildTests OFF CACHE INTERNAL "")
 add_subdirectory(Thirdparty/json)
 message(WARNING "Warning !!!! Thirdparty/json forces to use C++11. Please change cxx_std_11 to cxx_std_17 in its Thirdparty/json/CMakeLists.txt:90.")
 
-# Ceres
-find_package(Ceres REQUIRED)
-include_directories(${CERES_INCLUDE_DIRS})
 
 # Dlib
 find_package(dlib REQUIRED)
@@ -88,7 +85,6 @@ src/ARViewer.cc
 target_link_libraries(${PROJECT_NAME}
 ${OpenCV_LIBS}
 ${EIGEN3_LIBS}
-${CERES_LIBRARIES}
 ${Pangolin_LIBRARIES}
 ${PROJECT_SOURCE_DIR}/Thirdparty/DBoW2/lib/libDBoW2.so
 ${PROJECT_SOURCE_DIR}/Thirdparty/g2o/lib/libg2o.so
