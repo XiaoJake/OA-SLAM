@@ -1,3 +1,7 @@
+# 说明
+- 该工程是从原作者提供的仓库拷贝过来的，非本人创作。因为原地址是用的 “Gitlab at Inria” 平台，不好登录注册，所以想弄到github平台上，方便管理
+- 原仓库地址： https://gitlab.inria.fr/tangram/oa-slam
+- 原论文地址： https://arxiv.org/pdf/2209.08338.pdf
 # ORB-SLAM2
 
 **Associated Publication:**
